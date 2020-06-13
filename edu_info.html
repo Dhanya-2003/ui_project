@@ -1,0 +1,369 @@
+<!DOcTyPE html>
+<html>
+    <head>
+        <title>education info_page</title>      
+     <link rel="stylesheet" href="bootstrap.css">
+     <style>
+          body{
+  
+               background-image: url(https://i.pinimg.com/originals/67/92/56/6792561d8e17b2c4bf96aeea046f8035.jpg);
+               background-repeat: repeat;
+               background-size: cover;
+              
+          }
+
+          html{
+            height: 100%;
+          }
+          .center{
+            padding-top: 20%;
+            padding-right: 0%;
+            margin-right: 0%;
+          }
+          
+          #skills img{
+            height: 5rem;
+            width: 5rem;
+            
+            padding: 10px;
+            border-radius:5px;
+        }
+        .skill{
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0.2rem 0.25rem 0.75rem 0 rgba(0,0,0,.1);
+            margin: .5rem;
+            margin-top: 30px;
+            cursor: pointer;
+          transition: 0.4s;
+            
+        }
+        .skill:hover {
+            transform: scale(1.1, 1.1);
+            box-shadow: 0.5rem 1.25rem 1.75rem 0 rgba(0,0,0,.3);
+        
+          }
+        .skill p{
+            font-size: 0.8rem;
+            color: slategrey;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            
+        }
+          .dropdown{
+            padding-left: 10%;
+          }
+          .navbar{
+            font-size: 1.5em;
+          }
+          .row{
+              margin:0cm;
+              padding: 0cm;
+              font-size: 2em
+            
+          }
+          
+          .nav-item{
+            border:2px solid rgb(0, 47, 255);
+             color: white;
+          }
+          .nav-item:hover{
+              background-color: springgreen;
+          }
+          .col-sm-12{
+              font-size: x-large;
+              padding: 2% 2%;
+              margin-top: 0cm;
+            padding-top: 0cm;
+            
+          }
+          .heading1{
+            font-size: 2em;
+            margin-top: 0cm;
+            padding-top: 0cm;
+          }
+          .heading1::first-letter{
+            font-size: 3em;
+            color: springgreen;
+
+          }
+          .col-sm{
+            margin:0cm;
+            padding: 0cm;
+          }
+          .content{
+            margin:0cm;
+            padding: 0cm;
+            font-size: 0.7em;
+
+          }
+          .jumbotorn{
+            background-color: rgba(17, 250, 133, 0.5);
+
+          }
+          h1{
+            color: rgb(0, 47, 255);;
+          }
+          img{
+             border:2px solid rgb(0, 47, 255);
+             filter: grayscale(100%);
+          }
+          img:hover{
+            filter:none;
+            
+          }
+     </style>
+</head>
+    <body>
+    <script src="blog.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="bg">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="blog1.html"> <svg class="bi bi-house-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z" clip-rule="evenodd"/>
+                </svg> Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="personal_info.html">personal info</a>
+                  <a class="dropdown-item" href="family_info.html">family info</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="edu_info.html">education info</a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+          <ul class="nav navbar-collapse justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" onclick="editf()" href="#"> <svg class="bi bi-calendar" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M6.5 7a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+                  </svg> add tasks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="editf()" href="#"> <svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 00.5.5H4v.5a.5.5 0 00.5.5H5v.5a.5.5 0 00.5.5H6v-1.5a.5.5 0 00-.5-.5H5v-.5a.5.5 0 00-.5-.5H3z" clip-rule="evenodd"/>
+                  </svg> edit</a>
+              </li>              
+          </ul>
+      </form>
+      </nav>
+      <div class="jumbotorn">
+        <div class="row">
+            <div class="col-sm-2"><ul class="nav flex-column">
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                      <div class="bg-dark p-4">
+                        <h5 class="text-white h4">goto:
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#1.1">Schooling</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#1.2">Higher Education</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#1.3">Graduation</a>
+                              </li> 
+                              <li class="nav-item">
+                                <a class="nav-link" href="#1.4">Technical skills</a>
+                              </li>                            
+                            </ul></div>
+                        </h5>
+                        <span class="text-muted"></span>
+                    </div>
+                 </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </nav>
+                  </div>
+            </div>
+                  <div class="col-sm-12">
+                        <h1 class="heading1">About education:</h1><br>
+                        <div class="row">
+                            <div class="col-sm content jumbotorn">                              
+                              <h2 ><h1>Schooling</h1><p id="1.1">
+                                    I had my primary Schooling from 1st to 4th in Loyola Public school which is affiliated by ICSE and the higher Schooling from 6th to 10th in Narayana olympaid best school in guntur,AndhraPradesh. Those are the golden days of my life which i will never forget i enjoyed alot with my friends And i got a brilliant teachers. 
+                                    
+                                    <br>
+                                </p></h2>
+                              <h1 >Higher education</h1>  
+                              <p id="1.2">I studied my intermediate at sri chaitanya academy, it been a daily routine going to collage 7am and returning back home by 7pm.Had hard time in clg but finally completed higher education.
+                              </p>
+                                <h1 >Graduation</h1> 
+                                <p id="1.3">
+                                    I am Still persuing B.Tech in Computer Science Engineering in Amrita Vishwavidyapeetham in Amritapuri,Kerala. The great way of learning and teaching is done and blessings of AMMA  and we have a beach and beautiful land scapes here.</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <img src="https://www.amrita.edu/sites/default/files/amritapuri-about.jpg" alt="schoolphoto" width="475px" height="185px" >
+                                            </div>
+                                            <div class="col-sm-4">
+                                              
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <img src="https://www.amrita.edu/sites/default/files/amrita-amritapuri-campus-banner-1.jpg" alt="schoolphoto" width="475px" height="185px">
+                                            </div>
+                                        </div>    
+                                    </div> 
+                                    <h1 >Technical skills</h1>                        
+                                    <p id="1.4">i love coding and i am specifically good in:</p>
+                                      <div class="   mx-lg-5 px-md-5 my-md-3">
+                                          <div class="row d-flex justify-content-md-center ">
+                                              <div class="col-4 col-md-2">
+                                                  <div class="skill">
+                                                      <img src="data:image/png;base64,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" alt="html" width="100" height="100">
+                                                      <p class=" tag lead">HTML</p>
+                                                  </div>           
+                                               </div>
+                                              
+                                               <div class="col-4 col-md-2">
+                                                  <div class="skill" >
+                                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png" alt="css" width="100" height="100">
+                                                      <p class=" tag lead">CSS3</p>
+                                                  </div>           
+                                               </div>
+                                  
+                                               <div class="col-4 col-md-2">
+                                                  <div class="skill" >
+                                                      <img src="data:image/png;base64,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" alt="js" width="100" height="100">
+                                                      <p class=" tag lead">JavaScript</p>
+                                                  </div>           
+                                               </div>
+                                  
+                                               <div class="col-4 col-md-2">
+                                                  <div class="skill" >
+                                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbbykXtJeM5MnqAR5BsSuHsHu4D25Sa_grzbGSqjwz0nrabB-f&usqp=CAU" alt="python" width="100" height="100">
+                                                      <p class=" tag lead">python3</p>
+                                                  </div>           
+                                               </div>
+                                  
+                                               <div class="col-4 col-md-2">
+                                                  <div class="skill">
+                                                      <img src="https://www.vhv.rs/dpng/d/208-2081416_django-development-png-transparent-django-logo-png-download.png" alt="django" width="100" height="100">
+                                                      <p class=" tag lead">Django</p>
+                                                  </div>           
+                                               </div>
+                                               <div class="col-4 col-md-2">
+                                                  <div class="skill" >
+                                                      <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="c" width="100" height="100">
+                                                      <p class=" tag lead">C</p>
+                                                  </div>           
+                                               </div>
+                                              
+                                               <div class="col-4 col-md-2">
+                                                  <div class="skill" >
+                                                      <img src="https://miro.medium.com/max/824/1*9RqBEDU9Mbg6XM8O6d7Q9A.png" alt="BootStrap3" width="100" height="100">
+                                                      <p class=" tag lead">BootStrap3</p>
+                                                  </div>           
+                                               </div>
+                                               <div class="col-4 col-md-2">
+                                                  <div class="skill" >
+                                                      <img src="https://cdn.worldvectorlogo.com/logos/photoshop-cc.svg" alt="photoshop" width="100" height="100">
+                                                      <p class=" tag lead">PhotoShop</p>
+                                                  </div>           
+                                               </div>
+                                               <div class="col-4 col-md-2">
+                                                  <div class="skill" >
+                                                      <img src="https://img.favpng.com/11/17/14/data-structure-logo-brand-png-favpng-SiHV4dTHEtkiit6Uf0F405XNv.jpg" alt="data structures" width="100" height="100">
+                                                      <p class=" tag lead">Data Structures</p>
+                                                  </div>           
+                                               </div>
+                                               <div class="col-4 col-md-2">
+                                                <div class="skill" >
+                                                    <img src="https://w7.pngwing.com/pngs/28/601/png-transparent-sql-logo-illustration-microsoft-azure-sql-database-microsoft-sql-server-database-blue-text-logo.png" alt="sql" width="100" height="100">
+                                                    <p class=" tag lead">SQLDB</p>
+                                                </div>           
+                                             </div>
+                                               <div class="col-4 col-md-2">
+                                                <div class="skill" >
+                                                    <img src="https://i.redd.it/31b2ii8hchi31.jpg" alt="c++" width="100" height="100">
+                                                    <p class=" tag lead">C++</p>
+                                                </div>           
+                                             </div>
+                                                         
+                                               </div>
+                                               <button id="save" ></button>
+                                          </div>
+                                      </div>
+                                    <hr>
+                                  </section>
+                                  
+                                        </div>    
+                                    </div> 
+                                    
+                                </div>
+                                </div>
+                                
+                            </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                      
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                    
+            </div>
+        </div>
+        <script>
+          function editf(){
+            alert("only user can edit the website");
+            var paswd= prompt("enter the password");
+            if(paswd=='edit12')
+            {
+              document.getElementById("1.1").contentEditable=true;
+              document.getElementById("1.2").contentEditable=true;
+              document.getElementById("1.3").contentEditable=true;
+              document.getElementById("1.4").contentEditable=true;
+              document.getElementById("save").innerHTML = "save";
+            }
+            else{
+              alert("invalid password");
+            }
+          }
+          var myh=document.querySelector('h1');                    
+                      function getRandomColor(){
+                        var letters='0123456789ABCDEF';
+                        var color='#';
+                        
+                          for(var i=0; i<6; i++)
+                            {
+                            var r=Math.floor(Math.random()*16);
+                            color=color+letters[r];
+                            }
+                          return color;						
+                        }
+                        
+                        function changeColor()
+                        {
+                        myh.style.color=getRandomColor();
+                        
+                        }
+                        setInterval(changeColor,1000);
+        </script>
+    </body>
+    

@@ -1,0 +1,348 @@
+<!DOcTyPE html>
+<html>
+    <head>
+        <title>about_me_page</title>      
+     <link rel="stylesheet" href="bootstrap.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+          body{
+  
+               background-image: url(https://i.pinimg.com/originals/67/92/56/6792561d8e17b2c4bf96aeea046f8035.jpg);
+               background-repeat: repeat;
+               background-size: cover;
+               color: chartreuse;
+              
+          }
+
+          html{
+            height: 100%;
+          }
+          .center{
+            padding-top: 20%;
+            padding-right: 0%;
+            margin-right: 0%;
+          }
+          .lead{
+            font-family:cursive;
+            font-size:2em;
+            text-align: right;
+          }
+          .dropdown{
+            padding-left: 10%;
+          }
+          .navbar{
+            font-size: 1.5em;
+          }
+          .row{
+              margin:0cm;
+              padding: 0cm;
+              font-size: 2em
+            
+          }
+          
+          .nav-item{
+            border:2px solid rgb(0, 47, 255);
+             color: white;
+          }
+          .nav-item:hover{
+              background-color: springgreen;
+          }
+          .col-sm-12{
+              font-size: x-large;
+              padding: 2% 2%;
+              margin-top: 0cm;
+            padding-top: 0cm;
+            
+          }
+          .heading1{
+            font-size: 2em;
+            margin-top: 0cm;
+            padding-top: 0cm;
+          }
+          .heading1::first-letter{
+            font-size: 3em;
+            color: springgreen;
+
+          }
+          .col-sm{
+            margin:0cm;
+            padding: 0cm;
+          }
+          .content{
+            margin:0cm;
+            padding: 0cm;
+            font-size: 0.7em;
+
+          }
+          .jumbotron{
+            background-color: rgb(0, 0, 0,0.5);
+          }
+          button{
+            background-color: blue;
+            color: chartreuse;
+            border-radius: 30%;
+            font-size:40px;
+          }
+          h1{
+            color: rgb(0, 47, 255);;
+          }
+          img{
+             border:2px solid rgb(0, 47, 255);
+          }
+          img.grayscale {
+            filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+           filter:gray;
+            -webkit-filter:grayscale(100%);
+            -webkit-transition:all .6s ease;
+           -webkit-backface-visibility:hidden;
+          }
+          img.grayscale:hover {
+            filter:none;
+            -webkit-filter:grayscale(0%);
+          }
+          .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+          }
+          
+         
+          .column img {
+            opacity: 0.8; 
+            cursor: pointer; 
+          }
+          
+          .column img:hover {
+            opacity: 1;
+          }
+          
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          
+          .container {
+            position: relative;
+            display: none;
+          }
+          
+          
+          #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+          }
+          
+          .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+          }         
+          
+        
+     </style>
+</head>
+  <body>
+      <script src="blog.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="bg">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="blog1.html"> <svg class="bi bi-house-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z" clip-rule="evenodd"/>
+                </svg> Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="personal_info.html">personal info</a>
+                  <a class="dropdown-item" href="family_info.html">family info</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="edu_info.html">education info</a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+          <ul class="nav navbar-collapse justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" onclick="editf()" href="#"> <svg class="bi bi-calendar" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M6.5 7a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+                  </svg> add tasks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="editf()" href="#"> <svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 00.5.5H4v.5a.5.5 0 00.5.5H5v.5a.5.5 0 00.5.5H6v-1.5a.5.5 0 00-.5-.5H5v-.5a.5.5 0 00-.5-.5H3z" clip-rule="evenodd"/>
+                  </svg> edit</a>
+              </li>              
+          </ul>
+      </form>
+    </nav>
+      <div>
+        <div class="row">
+            <div class="col-sm-2"><ul class="nav flex-column">
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                      <div class="bg-dark p-4">
+                        <h5 class="text-white h4">goto:
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#1.1">friends</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#1.2">photos</a>
+                              </li>
+                              <li class="nav-item">
+                                <a  class="nav-link" href="#1.3">social media</a>
+                              </li>
+                              <li class="nav-item">
+                                <a id="book" class="nav-link" href="#1.4">contact me</a>
+                              </li>                             
+                            </ul></div>
+                        </h5>
+                        <span class="text-muted"></span>
+                    </div>
+                 </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </nav>
+                  </div>
+            </div>
+                  <div class="col-sm-12 jumbotron">
+                        <h1 class="heading1">About me:</h1><br>  
+                          <div class="row">                        
+                            <div class="col-sm content">                              
+                              <h2><p id="1.5">
+                                Name:Kode.Dhanya<br>
+                                Birth:26-MAY-2003 <br>
+                                Age: 16 <br>
+                                Birth Place:Guntur,Andhra Pradesh <br>
+                                Blood Group: AB+ <br>
+                                Present: Still persuing B.Tech in Computer Science Engineering  at Amrita <br>
+                                Hobbies: Swimming,listening to music,drawing,reading books, watching movies and series,coding,gardening,etc... <br>                                
+                              </p></h2> 
+                              <h1 >Friends</h1>  
+                              <p id="1.1">Few things have such a huge impact on happiness and the enjoyment, depth and plain fun of life as the friendships we have.
+
+                                It could be the friendships with our partners, family members, co-workers and the people we have known for a few years now or since we were kids.
+                              </p>
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <img class="grayscale" src="image2.jpg" alt="image lost" width="700" height="700">
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-4">
+                                  <p style="font-family: cursive;">“A real friend is one who walks in when the rest of the world walks out.”</p>
+                                </div> 
+                                <div>
+                                  <br>
+                                <h1 id="1.2">photos</h1><br>
+                                <table >
+                                  <th>
+                                  <img  src="image7.jpg" alt="beach pic" class="image grayscale" width="800" height="500">
+                                </th>
+                                <th>
+                                  <img  src="image8.jpg" alt="nature pic" class="image grayscale" width="800" height="500" >
+                                </th>
+                                <th><form action="images.html" method="get">
+                                  <button type="submit">more</button>
+                                </form>
+                                  
+                                </th>
+                                </table>
+                                  <div class="container">
+                                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                    <img id="expandedImg" style="width:100%">
+                                    <div id="imgtext"></div>
+                                  </div>                                
+                                  
+                 
+                              </div>
+                                
+                            <h1 >social Media</h1>
+                                <p id="1.3"><h2> <br>Now-a-days social media became common and everyone use it except for knowledge and current affairs. <br>
+                                  So i am not in social media.
+                                </h2></p>
+                              </div>
+                              <div id="cm" style="text-align: center;">
+                                <h1 id="1.4">contact me:</h1>
+                                <a href="mailto:kode.dhanya2003@gmail.com" class="fa fa-maxcdn" style="font-size:48px;color:red;padding-right:1cm"></i>
+                                <a href="https://www.snapchat.com/" class="fa fa-snapchat" style="font-size:48px;color:yellow;padding-right:1cm"></a>
+                                <a href="https://www.pinterest.com/" class="fa fa-pinterest" style="font-size:48px;color:rgb(148, 6, 6)"></a>
+                              </div>
+                              <button id="save" ></button>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                    
+                    <script >  
+                      var myh=document.querySelector('h1');                    
+                      function getRandomColor(){
+                        var letters='0123456789ABCDEF';
+                        var color='#';
+                        
+                          for(var i=0; i<6; i++)
+                            {
+                            var r=Math.floor(Math.random()*16);
+                            color=color+letters[r];
+                            }
+                          return color;						
+                        }
+                        
+                        function changeColor()
+                        {
+                        myh.style.color=getRandomColor();
+                        
+                        }
+                        setInterval(changeColor,1000);
+                       
+                          function myFunction(imgs) {
+                            var expandImg = document.getElementById("expandedImg");
+                            var imgText = document.getElementById("imgtext");
+                            expandImg.src = imgs.src;
+                            imgText.innerHTML = imgs.alt;
+                            expandImg.parentElement.style.display = "block";
+                          }
+                          function editf(){
+                            alert("only user can edit the website");
+                            var paswd= prompt("enter the password");
+                            if(paswd=='edit12')
+                            {
+                              document.getElementById("1.1").contentEditable=true;
+                              document.getElementById("1.2").contentEditable=true;
+                              document.getElementById("1.3").contentEditable=true;
+                              document.getElementById("1.5").contentEditable=true;
+                              document.getElementById("save").innerHTML = "save";
+                            }
+                            else{
+                              alert("invalid password");
+                            }
+                          }       
+                    </script> 
+    </body>
+</html>
+    
